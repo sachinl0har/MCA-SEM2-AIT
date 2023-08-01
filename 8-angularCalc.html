@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calculatorApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="8-angularCalc.js"></script>
+</head>
+<body ng-controller="CalculatorController">
+    <h1>Simple Calculator</h1>
+    <input type="number" ng-model="num1" placeholder="Enter number 1" />
+    <select ng-model="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" ng-model="num2" placeholder="Enter number 2" />
+    <button ng-click="calculate()">Calculate</button>
+    <p>Result: {{ result }}</p>
+</body>
+</html>

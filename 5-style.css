@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Font properties */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Text properties */
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Background properties */
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  /* Border properties */
+  div {
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Opacity */
+  img {
+    opacity: 0.8;
+  }
+  

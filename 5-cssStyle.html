@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3 Properties</title>
+  <link rel="stylesheet" href="5-style.css">
+  <style>
+    /* Internal styles */
+    /* Additional font properties */
+    h2 {
+      font-family: 'Times New Roman', serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Additional text properties */
+    .text-red {
+      color: red;
+    }
+
+    /* Additional background properties */
+    .bg-blue {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    /* Additional border properties */
+    .custom-border {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>External and Internal Styles</h1>
+
+  <p>This is a paragraph with some text.</p>
+
+  <!-- Internal styles -->
+  <h2>Internal Styles</h2>
+  <p class="text-red">This text is styled using internal CSS.</p>
+
+  <!-- External styles -->
+  <h2>External Styles</h2>
+  <div class="custom-border">
+    <img src="example.jpg" alt="Example Image">
+    <p>This div has a custom border applied using an external CSS file.</p>
+  </div>
+
+  <!-- Additional styles using internal styles -->
+  <h2>Additional Styles using Internal Styles</h2>
+  <p class="bg-blue">This text has a blue background color and white text color.</p>
+</body>
+</html>

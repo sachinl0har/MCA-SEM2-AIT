@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Flag</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+
+        .flag {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stripe {
+            height: 33.33%;
+            width: 100%;
+        }
+
+        .saffron {
+            background-color: #FF9933;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+
+        .green {
+            background-color: #138808;
+        }
+
+        .chakra {
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            left: 30%;
+            top: 30%;
+            background-color: #000;
+            border-radius: 50%;
+            transform-origin: center;
+            animation: rotateChakra 5s linear infinite;
+        }
+
+        @keyframes rotateChakra {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="stripe saffron"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+        <div class="chakra"></div>
+    </div>
+</body>
+</html>

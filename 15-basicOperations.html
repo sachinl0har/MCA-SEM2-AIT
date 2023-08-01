@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .result {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Basic Calculator</h1>
+    <div class="result" id="result">0</div>
+    <button onclick="clearResult()">C</button>
+    <button onclick="appendToResult(7)">7</button>
+    <button onclick="appendToResult(8)">8</button>
+    <button onclick="appendToResult(9)">9</button>
+    <button onclick="performOperation('+')">+</button>
+    <button onclick="appendToResult(4)">4</button>
+    <button onclick="appendToResult(5)">5</button>
+    <button onclick="appendToResult(6)">6</button>
+    <button onclick="performOperation('-')">-</button>
+    <button onclick="appendToResult(1)">1</button>
+    <button onclick="appendToResult(2)">2</button>
+    <button onclick="appendToResult(3)">3</button>
+    <button onclick="performOperation('*')">*</button>
+    <button onclick="appendToResult(0)">0</button>
+    <button onclick="performOperation('/')">/</button>
+    <button onclick="calculate()">=</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
